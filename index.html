@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root">
+
+        <div class="sidebar-backdrop hide"></div>
+
+        <nav id='navbar-container'>
+            <div class="logo-container">
+                <button class="nav-btn menu-button" id="hamburger-menu-button"><img src="./assets/nav-btn-pack/hamburger-menu.svg"
+                        alt="menu"></button>
+                <div class="logo-wrapper">
+                    <img src="./logo-white.svg" alt="youtube_logo">
+                </div>
+            </div>
+
+            <div class="search-box-container">
+                <form class="search-wrapper" id="search-query-form">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <button class="nav-btn" id="search-button"><img src="./assets/nav-btn-pack/search.svg"
+                            alt="look up">
+                    </button>
+                </form>
+                <button class="nav-btn" id="voice-search-button"><img src="./assets/nav-btn-pack/voice-search.svg"
+                        alt=""></button>
+            </div>
+
+            <div class="nav-right-container">
+                <div class="nav-buttons-cluster">
+                    <button class="nav-btn"><img src="./assets/nav-btn-pack/shoot-video.svg" alt=""></button>
+                    <button class="nav-btn"><img src="./assets/nav-btn-pack/grid-layout.svg" alt=""></button>
+                    <button class="nav-btn"><img src="./assets/nav-btn-pack/notifications.svg" alt=""></button>
+                </div>
+
+                <button class="nav-btn" id="profile-button"><strong>A</strong></button>
+
+            </div>
+        </nav>
+
+        <div class="main-layout-container">
+            
+            <aside class="sidebar">
+                <div class="sidebar-section top-logo-section hide">
+                    <div class="sidebar-link-container">
+                        <button class="nav-btn menu-button" id="hamburger-menu-button"><img
+                                src="./assets/nav-btn-pack/hamburger-menu.svg" alt="menu"></button>
+                        <div class="logo-wrapper">
+                            <img src="./logo-white.svg" alt="youtube_logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container selected">
+                        <div class="icon-container"><img src="./assets/home-icon-filled.svg" alt=""></div>Home
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/explore.svg" alt=""></div>
+                        Explore
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/subscriptions.svg" alt="">
+                        </div>Subscriptions
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/library.svg" alt=""></div>
+                        Library
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/history.svg" alt=""></div>
+                        History
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/yourVideos.svg" alt="">
+                        </div>Your Videos
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/watchLater.svg" alt="">
+                        </div>Watch Later
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/liked.svg" alt=""></div>
+                        Liked Videos
+                    </div>
+                    <div class="sidebar-link-container accordion-header closed">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/arrowBottom.svg" alt="">
+                        </div>Show More
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container sidebar-header">SUBSCRIPTIONS</div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container subscribed-channel-icon-container"><img
+                                src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                    </div>
+                    <div class="sidebar-link-container accordion-header closed">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/arrowBottom.svg" alt=""></div>
+                        Show More
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container sidebar-header">More from YouTube</div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/premium.svg" alt=""></div>
+                        YouTube Premium
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/gaming.svg" alt=""></div>
+                        Gaming
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/live.svg" alt=""></div>
+                        Live
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/sports.svg" alt=""></div>
+                        Sports
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/settings.svg" alt="">
+                        </div>Settings
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/report.svg" alt=""></div>
+                        Report History
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/help.svg" alt=""></div>
+                        Help
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/feedback.svg" alt="">
+                        </div>Send Feedback
+                    </div>
+                </div>
+
+                <footer class="sidebar-section">
+                    <ul class="footer-links-container">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Creators</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Developers</a></li>
+                    </ul>
+                    <ul class="footer-links-container">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Policy & Safety</a></li>
+                        <li><a href="#">How Youtube works</a></li>
+                        <li><a href="#">Test new features</a></li>
+                    </ul>
+
+                    <div class="copyright-container">© 2021 Google LLC</div>
+                </footer>
+
+            </aside>
+
+
+            <div class='main-container'>
+                <div class="tag-search-container">
+                    <div class="tag selected">All</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+                    <div class="tag">Item</div>
+
+                    <!-- <button class="tag-scroll-button">
+                        <img src="./assets/sidebar-icons-outlined/arrowBottom.svg" alt="">
+                    </button> -->
+                </div>
+
+                <div class="thumbnail-display-section">
+
+                    <!-- <div class="thumbnail-container">
+                        <div class="thumbnail-image-container"></div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-image-container">
+                            <span class="video-duration-container">10:02</span>
+                        </div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-image-container"></div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-image-container"></div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-image-container"></div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-container">
+                    <div class="thumbnail-image-container"></div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-image-container"></div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail-container">
+                        <div class="thumbnail-image-container"></div>
+                        <div class="thumbnail-details-container">
+                            <div class="channel-logo-column">
+                                <div class="channel-icon-container"></div>
+                            </div>
+                            <div class="thumbnail-data-column">
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="thumbnail-row">                        
+
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="thumbnail-row">                        
+
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="thumbnail-container">
+                            <div class="thumbnail-image-container"></div>
+                            <div class="thumbnail-details-container">
+                                <div class="channel-logo-column">
+                                    <div class="channel-icon-container"></div>
+                                </div>
+                                <div class="thumbnail-data-column">
+                                    <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                    <div class="video-details-container">
+                                        <div>Lorem ipsum dolor sit amet</div>
+                                        <div>
+                                            <span>Lorem, ipsum.</span>
+                                            <span>&#183 Lorem, ipsum.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> -->
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="ui.js"></script>
+<!-- <script src="ui.js"></script> -->
+
+</html>

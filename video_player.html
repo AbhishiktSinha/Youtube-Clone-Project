@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="video_player.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root">
+
+        <div class="sidebar-backdrop hide"></div>
+
+        <nav id='navbar-container'>
+            <div class="logo-container">
+                <button class="nav-btn menu-button" id="hamburger-menu-button"><img
+                        src="./assets/nav-btn-pack/hamburger-menu.svg" alt="menu"></button>
+                <div class="logo-wrapper">
+                    <img src="./logo-white.svg" alt="youtube_logo">
+                </div>
+            </div>
+
+            <div class="search-box-container">
+                <form class="search-wrapper" id="search-query-form_PlayerScreen">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <button class="nav-btn" id="search-button"><img src="./assets/nav-btn-pack/search.svg"
+                            alt="look up"></button>
+                    </form>
+                <button class="nav-btn" id="voice-search-button"><img src="./assets/nav-btn-pack/voice-search.svg"
+                        alt=""></button>
+            </div>
+
+            <div class="nav-right-container">
+                <div class="nav-buttons-cluster">
+                    <button class="nav-btn"><img src="./assets/nav-btn-pack/shoot-video.svg" alt=""></button>
+                    <button class="nav-btn"><img src="./assets/nav-btn-pack/grid-layout.svg" alt=""></button>
+                    <button class="nav-btn"><img src="./assets/nav-btn-pack/notifications.svg" alt=""></button>
+                </div>
+
+                <button class="nav-btn" id="profile-button"><strong>A</strong></button>
+
+            </div>
+        </nav>
+
+        <div class="main-layout-container">
+
+            <aside class="sidebar small-screen">
+                <div class="sidebar-section top-logo-section">
+                    <div class="sidebar-link-container">
+                        <button class="nav-btn menu-button" id="hamburger-menu-button"><img
+                                src="./assets/nav-btn-pack/hamburger-menu.svg" alt="menu"></button>
+                        <div class="logo-wrapper">
+                            <img src="./logo-white.svg" alt="youtube_logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container selected">
+                        <div class="icon-container"><img src="./assets/home-icon-filled.svg" alt=""></div>Home
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/explore.svg" alt=""></div>
+                        Explore
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/subscriptions.svg" alt="">
+                        </div>Subscriptions
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="section-inner-wrapper">
+                        <div class="sidebar-link-container">
+                            <div class="icon-container"><img src="./assets/sidebar-icons-outlined/library.svg" alt=""></div>
+                            Library
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container"><img src="./assets/sidebar-icons-outlined/history.svg" alt=""></div>
+                            History
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container"><img src="./assets/sidebar-icons-outlined/yourVideos.svg" alt="">
+                            </div>Your Videos
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container"><img src="./assets/sidebar-icons-outlined/watchLater.svg" alt="">
+                            </div>Watch Later
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container"><img src="./assets/sidebar-icons-outlined/liked.svg" alt=""></div>
+                            Liked Videos
+                        </div>
+                    </div>
+
+                    <div class="sidebar-link-container accordion-header closed">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/arrowBottom.svg" alt="">
+                        </div>Show More
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container sidebar-header">SUBSCRIPTIONS</div>
+
+                    <div class="section-inner-wrapper">
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                        <div class="sidebar-link-container">
+                            <div class="icon-container subscribed-channel-icon-container"><img
+                                    src="./assets/subscribed-channel-icon.jpg" alt=""></div>Lorem Ipsum
+                        </div>
+                    </div>
+
+                    <div class="sidebar-link-container accordion-header closed">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/arrowBottom.svg" alt="">
+                        </div>Show More
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container sidebar-header">More from YouTube</div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/premium.svg" alt=""></div>
+                        YouTube Premium
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/gaming.svg" alt=""></div>
+                        Gaming
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/live.svg" alt=""></div>
+                        Live
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/sports.svg" alt=""></div>
+                        Sports
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/settings.svg" alt="">
+                        </div>Settings
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/report.svg" alt=""></div>
+                        Report History
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/help.svg" alt=""></div>
+                        Help
+                    </div>
+                    <div class="sidebar-link-container">
+                        <div class="icon-container"><img src="./assets/sidebar-icons-outlined/feedback.svg" alt="">
+                        </div>Send Feedback
+                    </div>
+                </div>
+
+                <footer class="sidebar-section">
+                    <ul class="footer-links-container">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Creators</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Developers</a></li>
+                    </ul>
+                    <ul class="footer-links-container">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Policy & Safety</a></li>
+                        <li><a href="#">How Youtube works</a></li>
+                        <li><a href="#">Test new features</a></li>
+                    </ul>
+
+                    <div class="copyright-container">© 2021 Google LLC</div>
+                </footer>
+
+            </aside>
+
+            <div class="main-container">
+                <div class="video-player-wrapper">
+                    <div id="video_player_container"></div>
+                    
+                </div>
+
+                <div class="video-data-container">
+
+                    <div class="video-info-stats-container">
+
+                        <div class="video-title"></div>
+
+                        <div class="video-stats-and-actions">
+
+                            <div class="video-stats">
+                                
+                                <span></span>
+                                <span> &#183 </span>
+                                <span></span>
+                            </div>
+
+                            <div class="video-actions">
+
+                                <button class="video-action-button"><img src="./assets/video-actions-icons/Liked.svg" alt=""></button>
+                                <button class="video-action-button"><img src="./assets/video-actions-icons/DisLiked.svg" alt="">Dislike</button>
+                                <button class="video-action-button"><img src="./assets/video-actions-icons/Share.svg" alt="">Share</button>
+                                <button class="video-action-button"><img src="./assets/video-actions-icons/Save.svg" alt="">Save</button>
+                                <button class="video-action-button"><img src="./assets/video-actions-icons/More.svg" alt=""></button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-description-outer-container">
+
+                        <div class="creator-logo-column">
+
+                            <div class="creator-logo-container"><img src="./assets/subscribed-channel-icon.jpg" alt=""></div>                            
+                        </div>
+
+                        <div class="video-and-channel-details">
+
+                            <div class="channel-details-container">
+
+                                <div class="left">
+                                    <div class="channel-name"></div>
+                                    <div class="channel-subscriber-count"></div>
+                                </div>
+
+                                <button class="subscribe-button">SUBSCRIBE</button>
+                            </div>
+
+                            <div class="video-description-container">
+                                <div class="video-description-text-container"></div>
+                                <button class="accordion-header closed">Show more</button>
+                            </div>                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comments-section"> 
+
+                    <div class="comment-section-header-container">
+
+                        <div class="comment-count-container"><span id="comment-count"></span> comments</div>
+
+                        <button class="sort-comments-action-button"><img src="./assets/comments-section-icons/Dropdown.svg" alt=""> Sort by</button>
+                    </div>
+
+                    <div class="add-new-comment-container">
+
+                        <div class="profile-image-container">
+                            <img src="./assets/subscribed-channel-icon.jpg" alt="">
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" id="comment-input" placeholder="Add New Comment...">
+                        </div>
+                    </div>
+
+                    <div class="loaded-comments-section">
+
+                        <!-- <div class="comment-outer-wrapper">
+
+                            <div class="comment-container">
+
+                                <div class="profile-image-column">
+                                    <div class="profile-image-container"><img src="./assets/subscribed-channel-icon.jpg" alt=""></div>
+                                </div>
+    
+                                <div class="comment-main-container">
+                                    <div class="comment-header">
+                                        <span class="author-name">Lorem, ipsum.</span>
+                                        <span class="comment-published-time">8 hours ago</span>
+                                        <span class="comment-updated-time"></span>
+                                    </div>
+    
+                                    <div class="comment-content-container">
+                                        <div class="comment-text-cotainer comment-collapsed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam numquam beatae consequuntur corporis quia labore, sit expedita! Sunt quas veniam error aliquam ad cum aliquid repudiandae deleniti dignissimos cupiditate beatae a id, delectus ipsa minus laudantium assumenda consequuntur esse, corporis tempora, vitae temporibus! Quas commodi unde, corrupti eos, similique laudantium minima eum nemo natus hic, corporis id aperiam repudiandae debitis voluptate culpa architecto inventore saepe sapiente adipisci. Ducimus necessitatibus porro incidunt quod temporibus modi quibusdam soluta nam, voluptatem quis iusto.</div>
+                                        <span class="expand-comment-toggle">Read more</span>
+                                    </div>
+    
+                                    <div class="comment-actions-container">
+                                        <button class="like-comment-button"><img src="./assets/comments-section-icons/liked.svg" alt=""><span class="comment-like-count">3</span></button>
+                                        <button class="dislike-comment-button"><img src="./assets/comments-section-icons/disliked.svg" alt=""></button>
+                                        <button class="reply-comment-button">REPLY</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="replies-section hide">
+                                <div class="comment-container">
+
+                                    <div class="profile-image-column">
+                                        <div class="profile-image-container"><img src="./assets/subscribed-channel-icon.jpg" alt=""></div>
+                                    </div>
+        
+                                    <div class="comment-main-container">
+
+                                        <div class="comment-header">
+                                            <span class="author-name">Lorem, ipsum.</span>
+                                            <span class="comment-published-time">8 hours ago</span>
+                                            <span class="comment-updated-time"></span>
+                                        </div>
+        
+                                        <div class="comment-content-container">
+                                            <div class="comment-text-cotainer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam numquam beatae consequuntur corporis quia labore, sit expedita! Sunt quas veniam error aliquam ad cum aliquid repudiandae deleniti dignissimos cupiditate beatae a id, delectus ipsa minus laudantium assumenda consequuntur esse, corporis tempora, vitae temporibus! Quas commodi unde, corrupti eos, similique laudantium minima eum nemo natus hic, corporis id aperiam repudiandae debitis voluptate culpa architecto inventore saepe sapiente adipisci. Ducimus necessitatibus porro incidunt quod temporibus modi quibusdam soluta nam, voluptatem quis iusto.</div>
+                                            
+                                        </div>
+        
+                                        <div class="comment-actions-container">
+                                            <button class="like-comment-button"><img src="./assets/comments-section-icons/liked.svg" alt=""><span class="comment-like-count">3</span></button>
+                                            <button class="dislike-comment-button"><img src="./assets/comments-section-icons/disliked.svg" alt=""></button>                                        
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommends-container">
+
+                <div class="tag-search-container">
+                    <div class="tag selected">All</div>
+                    <div class="tag channel-tag">Item</div>
+                </div>
+
+
+                <div class="recommends-thumbnail-display-section">
+
+                    <div class="recommends-thumbnail-container thumbnail-container">
+                        <div class="thumbnail-image-container">
+                            <div class="video-duration-container">5:32</div>
+                        </div>
+
+                        <div class="thumbnail-details-container">
+                    
+                            <div class="thumbnail-data-column">
+
+                                <div class="video-title-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, qui?</div>
+                                <div class="video-details-container">
+                                    <div>Lorem ipsum dolor sit amet</div>
+                                    <div>
+                                        <span>Lorem, ipsum.</span>
+                                        <span>&#183 Lorem, ipsum.</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="ui.js"></script>
+<script src="script.js"></script>
+
+<script src="video_player.js"></script>
+
+</html>
