@@ -258,13 +258,13 @@ const searchInput = videoPlayer_searchForm.search;
 
 videoPlayer_searchForm.addEventListener('submit', (event)=> {
 
-    event.preventDefault();
-
+    event.preventDefault();    
+    
     const searchTrigger = searchInput.value;
 
     sessionStorage.setItem('searchTrigger', searchTrigger)
 
-    window.location.pathname = window.location.pathname.slice(0, window.location.pathname.lastIndexOf('/')) + '/index.html';
+    window.location.href = window.location.href.replace('video_player.html', 'index.html');
 
     videoPlayer_searchForm.reset();
 })
