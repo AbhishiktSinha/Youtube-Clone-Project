@@ -25,13 +25,13 @@
 .main-layout-container {    
 
     justify-content: center !important;
-    column-gap: 14px;
+    column-gap: 20px;
 }
 /* ~~~~~~~~~~~~~~~ RECOMMENDS ~~~~~~~~~~~~~~~~~~~~~~ */
 .recommends-container {
     width: 31%;
     max-height: 100vh;
-    min-width: 326px;
+    min-width: 312px;
     overflow: auto;
 }
 .recommends-container::-webkit-scrollbar {
@@ -102,6 +102,7 @@
     width: 47% !important;
     /* min-width: fit-content; */
     padding-block-start: 14px;
+    min-width: 500px;
 }
 
     /* ~~~~~~   VIDEO PLAYER  ~~~~~~~~~~~~~~~~ */
@@ -518,3 +519,11 @@
                     border-bottom: 1px solid var(--LIGHT-GRAY);
                 }
             }
+
+
+
+
+            /* ======================================================================================================== */
+
+        
+    

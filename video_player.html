@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="video_player.css">
+    <link rel="shortcut icon" href="favicon16.png" type="image/png">
     <script src="https://www.youtube.com/iframe_api"></script>
-    <title>Document</title>
+    <title>CloneTube</title>
 </head>
 
 <body>
@@ -20,7 +21,10 @@
                 <button class="nav-btn menu-button" id="hamburger-menu-button"><img
                         src="./assets/nav-btn-pack/hamburger-menu.svg" alt="menu"></button>
                 <div class="logo-wrapper">
-                    <img src="./logo-white.svg" alt="youtube_logo">
+                    <a href="/index.html">
+                        <img src="./logo-white.svg" alt="youtube_logo">
+                    </a>
+
                 </div>
             </div>
 
@@ -36,6 +40,7 @@
 
             <div class="nav-right-container">
                 <div class="nav-buttons-cluster">
+                    <button class="search-button-alt hide"><img src="./assets/nav-btn-pack/search.svg" alt=""></button>
                     <button class="nav-btn"><img src="./assets/nav-btn-pack/shoot-video.svg" alt=""></button>
                     <button class="nav-btn"><img src="./assets/nav-btn-pack/grid-layout.svg" alt=""></button>
                     <button class="nav-btn"><img src="./assets/nav-btn-pack/notifications.svg" alt=""></button>
@@ -370,7 +375,7 @@
 
                 <div class="recommends-thumbnail-display-section">
 
-                    <div class="recommends-thumbnail-container thumbnail-container">
+                    <!-- <div class="recommends-thumbnail-container thumbnail-container">
                         <div class="thumbnail-image-container">
                             <div class="video-duration-container">5:32</div>
                         </div>
@@ -391,7 +396,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
                     
                 </div>
 
@@ -404,5 +409,6 @@
 <script src="script.js"></script>
 
 <script src="video_player.js"></script>
+<script src="responsive.js"></script>
 
 </html>

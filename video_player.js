@@ -264,7 +264,7 @@ videoPlayer_searchForm.addEventListener('submit', (event)=> {
 
     sessionStorage.setItem('searchTrigger', searchTrigger)
 
-    window.location.pathname = '/index.html';
+    window.location.pathname = window.location.pathname.slice(0, window.location.pathname.lastIndexOf('/')) + 'index.html';
 
     videoPlayer_searchForm.reset();
 })

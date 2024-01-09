@@ -92,7 +92,7 @@ function updateThumbnailClickEvents() {
 let home_searchInput;
 let home_searchForm;
 
-if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+if (window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/index.html')) {
 
     home_searchForm = document.getElementById('search-query-form');
     home_searchInput = home_searchForm.search;
@@ -127,7 +127,7 @@ if (window.location.pathname === '/' || window.location.pathname === '/index.htm
 window.addEventListener('load', async (event)=> {
     
     // if not at home, abort
-    if ((window.location.pathname !== '/index.html') && (window.location.pathname !== '/')) {
+    if (!(window.location.pathname.endsWith('/index.html')) && !(window.location.pathname.endsWith('/'))) {
         console.log('oops', window.location.pathname);
         return;
     }
